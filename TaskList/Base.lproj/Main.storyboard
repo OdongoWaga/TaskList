@@ -32,7 +32,16 @@
                             <outlet property="delegate" destination="iqw-3g-1Tj" id="YQK-9Q-X4b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TaskList" id="Pfm-Ro-TqZ"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="TaskList" id="Pfm-Ro-TqZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Css-kM-vo2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="iqw-3g-1Tj" id="R5l-9A-aUg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysP-0r-g3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
